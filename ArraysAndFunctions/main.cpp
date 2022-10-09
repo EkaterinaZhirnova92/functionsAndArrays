@@ -3,15 +3,15 @@
 
 using namespace std;
 
-void FillRand(int arr[], const int n);	//Заполняет массив случайными числами
-void Print (int arr[], const int n);		//Выводит массив на экран
-int Sum(int arr[], const int n);		//Возвращает сумму элементов массива
-double Avg(int arr[], const int n);		//Возвращает среднее-арифметическое элементов массива
-int minValueIn(int arr[], const int n);//Возвращает минимальное значение в массиве
-int maxValueIn(int arr[], const int n);//Возвращает максимальное значение в массиве
-void ShiftLeft(int arr[], const int n, int number_of_shifts);	//Сдвигает массив на заданное число элементов влево
-void ShiftRight(int arr[], const int n, int number_of_shifts);//Сдвигает массив на заданное число элементов вправо
-void Sort(int arr[], const int n);		//Сортирует массив в порядке возрастания
+void FillRand(int arr[], const int n);	//Р—Р°РїРѕР»РЅСЏРµС‚ РјР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
+void Print (int arr[], const int n);		//Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ
+int Sum(int arr[], const int n);		//Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
+double Avg(int arr[], const int n);		//Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
+int minValueIn(int arr[], const int n);//Р’РѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ
+int maxValueIn(int arr[], const int n);//Р’РѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ
+void ShiftLeft(int arr[], const int n, int number_of_shifts);	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ РІР»РµРІРѕ
+void ShiftRight(int arr[], const int n, int number_of_shifts);//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ РІРїСЂР°РІРѕ
+void Sort(int arr[], const int n);		//РЎРѕСЂС‚РёСЂСѓРµС‚ РјР°СЃСЃРёРІ РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ
 
 
 void main()
@@ -21,17 +21,17 @@ void main()
 	int arr[n] = { 1,2,3,4,5,6,7,8,9,10 };
 	FillRand(arr, n);
 	Print(arr, n);
-	cout << "Сумма элементов массива: " << Sum(arr, n) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(arr, n) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(arr, n) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(arr, n) << endl;
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(arr, n) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(arr, n) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << minValueIn(arr, n) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << maxValueIn(arr, n) << endl;
 	Sort(arr, n);
 	Print(arr, n);
-	int number_of_shifts; //количество сдвилв
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
+	int number_of_shifts; //РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёР»РІ
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
 	ShiftLeft( arr, n, number_of_shifts);
 	Print(arr, n);
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
 	ShiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
 
