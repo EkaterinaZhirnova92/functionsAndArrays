@@ -6,31 +6,31 @@ using namespace std;
 const int ROWS = 3;
 const int COLS = 4;
 
-void FillRand(int arr[], const int n);	//Заполняет массив случайными числами
-void FillRand(double arr[], const int n);	//меняем тип переменной, перегружаем функцию
+void FillRand(int arr[], const int n);	//Р—Р°РїРѕР»РЅСЏРµС‚ РјР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
+void FillRand(double arr[], const int n);	//РјРµРЅСЏРµРј С‚РёРї РїРµСЂРµРјРµРЅРЅРѕР№, РїРµСЂРµРіСЂСѓР¶Р°РµРј С„СѓРЅРєС†РёСЋ
 void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
-void Print(int arr[], const int n);		//Выводит массив на экран
-void Print(double arr[], const int n);		//меняем тип переменной, перегружаем функцию
+void Print(int arr[], const int n);		//Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ
+void Print(double arr[], const int n);		//РјРµРЅСЏРµРј С‚РёРї РїРµСЂРµРјРµРЅРЅРѕР№, РїРµСЂРµРіСЂСѓР¶Р°РµРј С„СѓРЅРєС†РёСЋ
 void Print(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int Sum(int arr[], const int n);		//Возвращает сумму элементов массива
+int Sum(int arr[], const int n);		//Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
-double Avg(int arr[], const int n);		//Возвращает среднее-арифметическое элементов массива
+double Avg(int arr[], const int n);		//Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int minValueIn(int arr[], const int n);//Возвращает минимальное значение в массиве
+int minValueIn(int arr[], const int n);//Р’РѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ
 int minValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int maxValueIn(int arr[], const int n);//Возвращает максимальное значение в массиве
+int maxValueIn(int arr[], const int n);//Р’РѕР·РІСЂР°С‰Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ
 int maxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
-void ShiftLeft(int arr[], const int n, int number_of_shifts);	//Сдвигает массив на заданное число элементов влево
+void ShiftLeft(int arr[], const int n, int number_of_shifts);	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ РІР»РµРІРѕ
 void ShiftLeft(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);	
 
-void ShiftRight(int arr[], const int n, int number_of_shifts);//Сдвигает массив на заданное число элементов вправо
-void Sort(int arr[], const int n);		//Сортирует массив в порядке возрастания
+void ShiftRight(int arr[], const int n, int number_of_shifts);//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ РІРїСЂР°РІРѕ
+void Sort(int arr[], const int n);		//РЎРѕСЂС‚РёСЂСѓРµС‚ РјР°СЃСЃРёРІ РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ
 void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 
@@ -41,17 +41,17 @@ void main()
 	int arr[n] = { 1,2,3,4,5,6,7,8,9,10 };
 	FillRand(arr, n);
 	Print(arr, n);
-	cout << "Сумма элементов массива: " << Sum(arr, n) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(arr, n) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(arr, n) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(arr, n) << endl;
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(arr, n) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(arr, n) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << minValueIn(arr, n) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << maxValueIn(arr, n) << endl;
 	Sort(arr, n);
 	Print(arr, n);
-	int number_of_shifts; //количество сдвилв
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
+	int number_of_shifts; //РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёР»РІ
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
 	ShiftLeft(arr, n, number_of_shifts);
 	Print(arr, n);
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
 	ShiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
 
@@ -62,27 +62,27 @@ void main()
 	Print(brr, SIZE);
 
 	const int D_SIZE = 8;
-	double d_brr[D_SIZE];  //изменили тип переменной
+	double d_brr[D_SIZE];  //РёР·РјРµРЅРёР»Рё С‚РёРї РїРµСЂРµРјРµРЅРЅРѕР№
 	FillRand(d_brr, D_SIZE);
 	Print(d_brr, D_SIZE);
-	cout << "далее двумерный массив: "<< endl;
+	cout << "РґР°Р»РµРµ РґРІСѓРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ: "<< endl;
 
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS);
 
 
-	cout << "Сумма элементов массива: " << Sum(i_arr_2, ROWS, COLS) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(i_arr_2, ROWS, COLS) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(i_arr_2, ROWS, COLS) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ-Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(i_arr_2, ROWS, COLS) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
 
-	cout << "Введите количество сдвигов: ";
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: ";
 	cin >> number_of_shifts;
 	ShiftLeft(i_arr_2, ROWS, COLS, number_of_shifts);
 	Print(i_arr_2, ROWS, COLS);
 	cout << endl;
-	cout << "сортировка массива: " << endl;
+	cout << "СЃРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР°: " << endl;
 	Sort(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS);
 }
@@ -95,7 +95,7 @@ void FillRand(int arr[], const int n)
 	}
 }
 
-void FillRand(double arr[], const int n)  //перегружаем реализацию функции
+void FillRand(double arr[], const int n)  //РїРµСЂРµРіСЂСѓР¶Р°РµРј СЂРµР°Р»РёР·Р°С†РёСЋ С„СѓРЅРєС†РёРё
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -123,7 +123,7 @@ void Print(int arr[], const int n)
 	cout << endl;
 }
 
-void Print(double arr[], const int n) //перегружаем реализацию функции
+void Print(double arr[], const int n) //РїРµСЂРµРіСЂСѓР¶Р°РµРј СЂРµР°Р»РёР·Р°С†РёСЋ С„СѓРЅРєС†РёРё
 {
 	for (int i = 0; i < n; i++) {
 		cout << arr[i] << "\t";
